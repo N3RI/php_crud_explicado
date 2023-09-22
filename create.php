@@ -3,7 +3,7 @@
 // $conexion = mysqli_connect("localhost", "usuario", "contraseña", "base_de_datos");
 $conexion = mysqli_connect("localhost", "root", "", "base_de_datos");
 
-// Comprobar la conexión
+// Comprobar la conexión y devolver error
 if (mysqli_connect_errno()) {
     die("La conexión a la base de datos falló: " . mysqli_connect_error());
 }
@@ -12,6 +12,7 @@ if (mysqli_connect_errno()) {
 $apellido = "Tisocco";
 $nombre = "Neri";
 $email = "neri@tisocco.com";
+
 $consulta = "INSERT INTO usuarios (apellido, nombre, email) VALUES ('$apellido', '$nombre', '$email')";
 $resultado = mysqli_query($conexion, $consulta);
 

@@ -9,6 +9,7 @@ if (mysqli_connect_errno()) {
 // Actualizar un registro en la tabla 'usuarios'
 $id = 1;
 $nuevoNombre = "Nuevo Nombre";
+
 $consulta = "UPDATE usuarios SET nombre='$nuevoNombre' WHERE id=$id";
 $resultado = mysqli_query($conexion, $consulta);
 

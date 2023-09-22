@@ -8,7 +8,9 @@ if (mysqli_connect_errno()) {
 
 // Eliminar un registro de la tabla 'usuarios'
 $id = 1;
+
 $consulta = "DELETE FROM usuarios WHERE id=$id";
+
 $resultado = mysqli_query($conexion, $consulta);
 
 if ($resultado) {
