@@ -10,6 +10,11 @@ en el código, depurar, probar nuevas características y hacer ajustes sin afect
 Las bases de datos en desarrollo a menudo contienen datos de prueba o ficticios.
 */
 
+// show errors
+//  ini_set('display_errors', '1');
+//  ini_set('display_startup_errors', '1');
+//  error_reporting(E_ALL);
+
 // Definir una variable que indique el entorno actual (puedes establecer esto en tu configuración)
 $entorno = "produccion"; // O podrías establecerlo en "desarrollo"
 

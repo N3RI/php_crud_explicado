@@ -4,6 +4,11 @@
 // Esto hace que tu código sea más robusto y proporciona información útil en caso de que se produzca un problema 
 // con la conexión a la base de datos.
 
+// show errors
+//  ini_set('display_errors', '1');
+//  ini_set('display_startup_errors', '1');
+//  error_reporting(E_ALL);
+
 // Parámetros de conexión a la base de datos
 $host = "localhost"; 
 $usuario = "root"; // $usuario = "usuario";
