@@ -1,6 +1,7 @@
 <?php
 // Establecer una conexión a la base de datos
-$conexion = mysqli_connect("localhost", "usuario", "contraseña", "base_de_datos");
+// $conexion = mysqli_connect("localhost", "usuario", "contraseña", "base_de_datos");
+$conexion = mysqli_connect("localhost", "root", "", "base_de_datos");
 
 // Comprobar la conexión
 if (mysqli_connect_errno()) {
@@ -8,7 +9,8 @@ if (mysqli_connect_errno()) {
 }
 
 // Insertar datos en la tabla 'usuarios'
-$nombre = "Neri Tisocco";
+$apellido = "Tisocco";
+$nombre = "Neri";
 $email = "neri@tisocco.com";
 $consulta = "INSERT INTO usuarios (apellido, nombre, email) VALUES ('$apellido', '$nombre', '$email')";
 $resultado = mysqli_query($conexion, $consulta);
