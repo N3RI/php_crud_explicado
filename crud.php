@@ -5,21 +5,8 @@
 // Vinculamos parámetros a las declaraciones preparadas utilizando bind_param() para garantizar que la entrada del usuario se trate como datos y no como código SQL ejecutable.
 // Manejamos los errores de manera adecuada y proporcionamos mensajes de error apropiados.
 
-// Parámetros de conexión a la base de datos
-$host = "localhost";
-// $usuario = "usuario";
-$usuario = "root";
-// $contraseña = "contraseña";
-$contraseña = "";
-$base_de_datos = "base_de_datos";
+include("config/config.php");
 
-// Crear una nueva conexión a la base de datos
-$conexion = new mysqli($host, $usuario, $contraseña, $base_de_datos);
-
-// Comprobar la conexión
-if ($conexion->connect_error) {
-    die("La conexión falló: " . $conexion->connect_error);
-}
 
 // Crear (Insertar)
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["create"])) {
