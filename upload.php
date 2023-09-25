@@ -1,4 +1,5 @@
 <?php
+// Explicación: https://www.php.net/manual/es/features.file-upload.post-method.php 
 $dir_subida = '/var/www/uploads/';
 $archivo_subido = $dir_subida . basename($_FILES['archivo_usuario']['name']);
 
@@ -14,6 +15,18 @@ print_r($_FILES);
 
 print "</pre>";
 
+/*
+$_FILES['archivo_usuario']['name']
+El nombre original del archivo en la máquina del cliente.
+$_FILES['archivo_usuario']['type']
+El tipo MIME del archivo, si el navegador proporcionó esta información. Un ejemplo sería "image/gif". Este tipo MIME, sin embargo, no se comprueba en el lado de PHP y por lo tanto no se garantiza su valor.
+$_FILES['archivo_usuario']['size']
+El tamaño, en bytes, del archivo subido.
+$_FILES['archivo_usuario']['tmp_name']
+El nombre temporal del archivo en el cual se almacena el archivo subido en el servidor.
+$_FILES['archivo_usuario']['error']
+El código de error asociado a esta subida.
+*/
 ?>
 
 <!DOCTYPE html>
