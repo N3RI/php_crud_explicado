@@ -59,12 +59,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["actualizar"])) {
 	}
 }
 
-// Actualizar
+// si aprieto el botón Eliminar
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["eliminar"])) {
 	$id_eliminar = trim($_POST["id"]);
 }
 
-// Update
+// si aprieto el botón Update
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["update"])) {
     $id = $_POST["id"];
     $nuevoApellido = $_POST["nuevo_apellido"];
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["update"])) {
     }
 }
 
-// Delete
+// si aprieto el botón Delete
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
     $id = $_POST["id"];
 
