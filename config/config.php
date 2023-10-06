@@ -19,8 +19,8 @@ if ($conexion->connect_error) {
 }
 
 // Configurar el conjunto de caracteres y la zona horaria
-$conexion->set_charset("utf8mb4");
-$conexion->query("SET time_zone = 'America/Argentina/Buenos_Aires'");
-$conexion->query("SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'");
+// $conexion->set_charset("utf8mb4");
+// $conexion->query("SET time_zone = 'America/Argentina/Buenos_Aires'");
+// $conexion->query("SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'");
 
 ?>
