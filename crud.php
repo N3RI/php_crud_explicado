@@ -198,7 +198,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
 							<label for="email" class="form-label">Correo Electrónico:</label>
 							<input type="email" name="email" id="email" class="form-control" required>
 						</div>
-						<input type="submit" name="create" value="Create">
+						<input type="submit" name="create" value="Create" class="btn btn-success">
 						<!-- el código php de más arriba chequea si isset "create" -->
 					</form>
 				</div>
@@ -245,8 +245,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
 											// Formulario para acciones (Actualizar y Eliminar) en cada fila
 											// tiene un input oculto (hidden) en el que pasamos el id al crud
 												echo "<form action='crud.php' method='post'>";
-													echo "<input type='submit' name='actualizar' value='Actualizar'>";
-													echo "<input type='submit' name='eliminar' value='Eliminar' class='mx-3'>";
+													echo "<input type='submit' name='actualizar' value='Actualizar' class='btn btn-primary'>";
+													echo "<input type='submit' name='eliminar' value='Eliminar' class='btn btn-danger mx-3'>";
 													echo "<input type='hidden' name='id' value='" . $fila["id"] . "'>";
 												echo "</form>";
 											echo "</td>";
@@ -289,7 +289,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
 							<label for="nuevo_email" class="form-label">Nuevo Email:</label>
 							<input type="text" name="nuevo_email" id="nuevo_email" class="form-control" value="<?php echo $nuevo_email; ?>" required>
 						</div>
-						<input type="submit" name="update" value="Update">
+						<input type="submit" name="update" value="Update" class="btn btn-primary">
 						<!-- al apretar este botón entraremos al if isset "update" -->
 					</form>
 				</div>
@@ -308,7 +308,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
 							<label for="id_delete" class="form-label">ID de Usuario:</label>
 							<input type="number" name="id" id="id_delete" class="form-control" value="<?php echo $id_eliminar; ?>" required readonly>
 						</div>
-						<input type="submit" name="delete" value="Delete">
+						<input type="submit" name="delete" value="Delete" class="btn btn-danger">
 						<!-- enviamos al if isset delete el id del registro a eliminar  -->
 					</form>
 				</div>
