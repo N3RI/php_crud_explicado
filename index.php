@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-	<title>Title</title>
+	<title>PHP CRUD Explicado</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS v5.2.1 -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-	<header>
+	<header class="container">
 		<!-- place navbar here -->
 		<h1>CRUD Explicado</h1>
 	</header>
@@ -21,24 +21,30 @@
 		<div class="container">
 			<div class="row justify-content-center g-2">
 				<div class="col">
-					<!-- Hover added -->
 					<div class="list-group">
 						<h2>CRUD Simple</h2>
-						<a href="create.php" class="list-group-item list-group-item-action">Create</a>
-						<a href="read.php" class="list-group-item list-group-item-action">Read</a>
-						<a href="update.php" class="list-group-item list-group-item-action">Update</a>
-						<a href="delete.php" class="list-group-item list-group-item-action">Delete</a>
+						<a href="crud_simple/create.php" class="list-group-item list-group-item-action">Create</a>
+						<a href="crud_simple/read.php" class="list-group-item list-group-item-action">Read</a>
+						<a href="crud_simple/update.php" class="list-group-item list-group-item-action">Update</a>
+						<a href="crud_simple/delete.php" class="list-group-item list-group-item-action">Delete</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="list-group">
+						<h2>CRUD Avanzado</h2>
+						<a href="crud.php" class="list-group-item list-group-item-action">CRUD Avanzado</a>
 					</div>
 
 				</div>
 				<div class="col">
 					<div class="list-group">
-						<h2>CRUD Avanzado</h2>
-						<a href="crud.php" class="list-group-item list-group-item-action">CRUD</a>
+						<h2>CRUD Simple</h2>
+						<a href="crud_simple/create.php" class="list-group-item list-group-item-action">Create</a>
+						<a href="crud_simple/read.php" class="list-group-item list-group-item-action">Read</a>
+						<a href="crud_simple/update.php" class="list-group-item list-group-item-action">Update</a>
+						<a href="crud_simple/delete.php" class="list-group-item list-group-item-action">Delete</a>
 					</div>
-
 				</div>
-				<div class="col">Column</div>
 			</div>
 		</div>
 
