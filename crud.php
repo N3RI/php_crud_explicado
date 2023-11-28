@@ -309,6 +309,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
 							<input type="number" name="id" id="id_delete" class="form-control" value="<?php echo $id_eliminar; ?>" required readonly>
 						</div>
 						<input type="submit" name="delete" value="Delete">
+						<!-- enviamos al if isset delete el id del registro a eliminar  -->
 					</form>
 				</div>
 			</div>

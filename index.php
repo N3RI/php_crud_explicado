@@ -38,11 +38,11 @@
 				</div>
 				<div class="col">
 					<div class="list-group">
-						<h2>CRUD Simple</h2>
-						<a href="crud_simple/create.php" class="list-group-item list-group-item-action">Create</a>
-						<a href="crud_simple/read.php" class="list-group-item list-group-item-action">Read</a>
-						<a href="crud_simple/update.php" class="list-group-item list-group-item-action">Update</a>
-						<a href="crud_simple/delete.php" class="list-group-item list-group-item-action">Delete</a>
+						<h2>Código Extra</h2>
+						<a href="./enviar_mails/" class="list-group-item list-group-item-action">Enviar Mails</a>
+						<a href="./manejar_usuarios/" class="list-group-item list-group-item-action">Manejar Usuarios</a>
+						<a href="./subir_archivos/" class="list-group-item list-group-item-action">Subir Archivos</a>
+						<a href="./sql/" class="list-group-item list-group-item-action">Ejemplo de Base de Datos</a>
 					</div>
 				</div>
 			</div>
